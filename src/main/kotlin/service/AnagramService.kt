@@ -7,7 +7,6 @@ class AnagramService {
 
 
     fun findAnagrams(words: List<String>): List<AnagramGroup> {
-
         val anagrams = words
             .groupBy { it.toAnagramKey() }
             .filter { it.value.size > 1 }
