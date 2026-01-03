@@ -12,7 +12,7 @@ A Kotlin-based command-line application that finds anagram groups from text file
 
 ## Requirements
 
-- Java 24 or higher
+- Java 21 or higher
 - Kotlin 2.2.21 (included via Gradle wrapper)
 
 ## Building and Running
