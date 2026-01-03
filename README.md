@@ -30,7 +30,7 @@ A Kotlin-based command-line application that finds anagram groups from text file
 gradlew.bat run
 ```
 
-**Note for Windows users:** The Gradle configuration includes UTF-8 encoding settings to properly display Norwegian characters (æ, ø, å). If you still experience encoding issues, ensure your terminal supports UTF-8.
+**Note for Windows users:** The Gradle configuration includes UTF-8 encoding settings to properly display Norwegian characters (æ, ø, å). If you still experience encoding issues, ensure your terminal supports UTF-8 or use save to file.    
 
 ### Run tests
 ```bash
