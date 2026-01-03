@@ -5,7 +5,7 @@ import java.io.File
 object FileReader {
 
     fun readFile(path: String): String {
-        return File(path).readText()
+        return File(path).readText(Charsets.UTF_8)
     }
 
     fun readWords(filename: String): List<String> {
