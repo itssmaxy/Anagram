@@ -14,6 +14,7 @@ A Kotlin-based command-line application that finds anagram groups from text file
 
 - Java 21 or higher
 - Kotlin 2.2.21 (included via Gradle wrapper)
+- Input files stored under resources
 
 ## Building and Running
 
