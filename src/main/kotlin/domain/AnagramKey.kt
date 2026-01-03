@@ -5,6 +5,17 @@ data class AnagramKey(
 )
 
 fun String.toAnagramKey(): AnagramKey {
-    val sortedWord = this.toCharArray().sorted().joinToString("")
-    return AnagramKey(sortedWord)
+    val frequency = IntArray(size=29) //Only the alphabet
+    for (char in this.lowercase()) {
+        val index = when (char) {
+            in 'a'..'z' -> char - 'a'
+            'æ' -> 26
+            'ø' -> 27
+            'å' -> 28
+            else -> continue
+        }
+        frequency[index]++
+    }
+    return AnagramKey(frequency.joinToString(""))
+
 }
