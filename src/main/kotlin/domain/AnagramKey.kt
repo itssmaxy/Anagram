@@ -17,5 +17,4 @@ fun String.toAnagramKey(): AnagramKey {
         frequency[index]++
     }
     return AnagramKey(frequency.joinToString(""))
-
 }

@@ -29,10 +29,10 @@ fun main() {
     if (AnagramWriter.askToSaveToFile()) {
         val outputPath = AnagramWriter.getOutputFilePath(filePath)
         AnagramWriter.writeToFile(anagrams, outputPath)
-        println("\n Results saved to: $outputPath")
+        println("\nResults saved to: $outputPath")
     }
     else {
-        println("\n Will print out results to console:")
+        println("\nWill print out results to console:")
         AnagramWriter.writeToConsole(anagrams)
     }
 
